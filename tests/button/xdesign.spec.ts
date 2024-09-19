@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test'
 
-test.describe('input组件xdesign规范', () => {
+test.describe('button 组件xdesign规范', () => {
   test('button默认--UI截图', async ({ page }) => {
     page.on('pageerror', (exception) => expect(exception).toBeNull())
     await page.goto('button#basic-usage')
