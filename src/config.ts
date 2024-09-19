@@ -9,7 +9,9 @@ const Config = ({ testDir, baseURL, storageState, devServerCommon }) =>
       // 每个 expect() 用例最长时间。
       timeout: 15 * 1000,
       toHaveScreenshot: {
-        maxDiffPixelRatio: 0.02
+        maxDiffPixelRatio: 0.02,
+        threshold: 0, 
+        maxDiffPixels: 0
       }
     },
     /* Fail the build on CI if you accidentally left test.only in the source code. */
